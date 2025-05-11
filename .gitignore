@@ -3,8 +3,15 @@ Data/
 *.csv
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# Below is generic
+# Below is generic python stuff
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+# python venv stuff
+Scripts/
+Lib/
+Include/
+pyvenv.cfg
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
