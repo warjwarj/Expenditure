@@ -63,5 +63,6 @@ def write_summary(output_dir, file_summaries):
         writer = csv.writer(f)
         writer.writerow(header)
         writer.writerows(rows)
+        f.close()
 
     print("CSV written successfully.")

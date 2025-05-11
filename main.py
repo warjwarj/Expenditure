@@ -1,6 +1,8 @@
 import categorise
 import summarise
 
+import os
+
 # raw bank transaction data
 raw_data_dir = "./Data/Raw"
 
@@ -8,7 +10,7 @@ raw_data_dir = "./Data/Raw"
 categorised_data_dir = "./Data/Categorised"
 
 # file to write the summarised data to
-summarised_data_file = './Data/Summarised/summary.csv'
+summarised_data_file_path = './Data/Summarised/summary.csv'
 
 # This is used to search for keywords in the description of each transaction
 category_dict = {
@@ -30,4 +32,7 @@ if __name__ == "__main__":
     summarised_data = summarise.summarise_files(categorised_data_dir)
 
     # write the summary to a file
-    summarise.write_summary(summarised_data_file, summarised_data)
+    summarise.write_summary(summarised_data_file_path, summarised_data)
+
+    # open the file
+    os.startfile(os.path.abspath(summarised_data_file_path))
