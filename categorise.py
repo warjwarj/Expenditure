@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-# This function categorises induvidual transactions using the category_dict
+# This function categorises induvidual transactions using the dictionary of categorised keywords provided
 def categorise_transaction(description, category_dict):
     description_lower = description.lower()
     for category, keywords in category_dict.items():
